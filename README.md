@@ -32,3 +32,5 @@
 Intel i5-3350P  
 L2 cache: 4 * 256 kb  
 L3 cache: 6 mb
+
+Компилятор: Intel C++ Compiler 18.0.30.14
