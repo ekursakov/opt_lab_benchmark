@@ -24,8 +24,8 @@ void doIt(bool is_optimized) {
 	int size = 512 * 3;
 
 	// 256 * 256 * 4 * 3 = 768kb > 256kb (L2)
-	// 128 * 128 * 4 * 3 = 196kb < 256kb
-	int block_size = int(is_optimized ? 128 : 256);
+	// 96 * 96 * 4 * 3 = 108kb < 256kb
+	int block_size = int(is_optimized ? 96 : 256);
 
 	printf("size = %d, block = %d\n", size, block_size);
 
@@ -50,8 +50,6 @@ void doIt(bool is_optimized) {
 }
 
 int main(int argc, char **argv) {
-	//doIt(true);
-	//return 0;
 	if (argc != 2) {
 		doIt(false);
 		doIt(true);
